@@ -4,7 +4,7 @@
 [[PBLocation location] startLocationAddress:^(BOOL isSuccess, PBLocationModel *locationModel) {
     if (isSuccess) {
         NSDictionary *dic = locationModel.locatedAddress;
-    NSLog(@"%@",dic);
+        NSLog(@"%@",dic);
     }else {
         NSLog(@"定位失败");
     }
