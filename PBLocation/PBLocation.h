@@ -25,25 +25,25 @@
 /** 定位的地理位置信息 */
 @property (nonatomic, strong) NSDictionary  *locatedAddress;
 /** 位置名 */
-@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString      *name;
 /**  街道 */
-@property (nonatomic, strong) NSString *thoroughfare;
+@property (nonatomic, strong) NSString      *thoroughfare;
 /** 子街道 */
-@property (nonatomic, strong) NSString *subThoroughfare;
+@property (nonatomic, strong) NSString      *subThoroughfare;
 /** 市 */
-@property (nonatomic, strong) NSString *locality;
+@property (nonatomic, strong) NSString      *locality;
 /** 区 */
-@property (nonatomic, strong) NSString *subLocality;
+@property (nonatomic, strong) NSString      *subLocality;
 /** 省（州） */
-@property (nonatomic, strong) NSString *administrativeArea;
+@property (nonatomic, strong) NSString      *administrativeArea;
 /** 其他行政信息，可能是县镇乡等 */
-@property (nonatomic, strong) NSString *subAdministrativeArea;
+@property (nonatomic, strong) NSString      *subAdministrativeArea;
 /** 邮政编码 */
-@property (nonatomic, strong) NSString *postalCode;
+@property (nonatomic, strong) NSString      *postalCode;
 /** 国家编码 */
-@property (nonatomic, strong) NSString *ISOcountryCode;
+@property (nonatomic, strong) NSString      *ISOcountryCode;
 /** 国家 */
-@property (nonatomic, strong) NSString *country;
+@property (nonatomic, strong) NSString      *country;
 
 @end
 
