@@ -45,7 +45,7 @@
     }
     [self stopLocation];
     if (self.addressBlock) {
-        self.addressBlock(nil);
+        self.addressBlock(NO,nil);
     }
 }
 
@@ -72,7 +72,7 @@
         model.subThoroughfare = placemark.subThoroughfare;
         
         if (weakSelf.addressBlock) {
-            weakSelf.addressBlock (model);
+            weakSelf.addressBlock (YES,model);
         }
     }];
     // 停止定位
@@ -82,7 +82,7 @@
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
     [self stopLocation];
     if (self.addressBlock) {
-        self.addressBlock (nil);
+        self.addressBlock (NO,nil);
     }
 }
 

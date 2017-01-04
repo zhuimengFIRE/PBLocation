@@ -18,9 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [[PBLocation location] startLocationAddress:^(PBLocationModel *locationModel) {
-        NSDictionary *dic = locationModel.locatedAddress;
-        NSLog(@"%@",dic);
+    [[PBLocation location] startLocationAddress:^(BOOL isSuccess, PBLocationModel *locationModel) {
+        if (isSuccess) {
+            NSDictionary *dic = locationModel.locatedAddress;
+            NSLog(@"%@",dic);
+        }else {
+            NSLog(@"定位失败");
+        }
     }];
     
 }

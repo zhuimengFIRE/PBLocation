@@ -48,7 +48,7 @@
 @end
 
 
-typedef void (^complateBlock) (PBLocationModel *locationModel);
+typedef void (^complateBlock) (BOOL isSuccess, PBLocationModel *locationModel);
 
 @interface PBLocation : NSObject
 
